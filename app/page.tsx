@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import './page.module.css'
 import Link from 'next/link'
+// import "./globals.css"
 
 export default function Home() {
   return (
