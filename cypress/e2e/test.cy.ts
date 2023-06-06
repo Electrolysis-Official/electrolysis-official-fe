@@ -11,5 +11,11 @@ describe('Content of Home Page', () => {
     .should("contain", "Client History and Consent Form")
     .should("contain", "Before/After Care")
   })
-  
+  it("Should show the Home Content", () => {
+    cy.get("article")
+    .get("h1").should("contain", "T4T Electrolysis")
+    .get(".mainParagraph").should("be.visible")
+    .get(".formLink").should("have.attr", "href")
+    .and("include", "Client History and Consent Form")
+  })
 })
