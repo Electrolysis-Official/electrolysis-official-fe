@@ -4,7 +4,7 @@ import logo from "./assets/logo.jpeg"
 import Image from "next/image"
 
 const NavBar =() => {
-  const options = ["Home", "Electrolysis", "Services", "AboutMe", "ClientHistoryandConsentForm", "Before/AfterCare"]
+  const options = ["Home", "Electrolysis", "Services", "AboutMe", "ClientHistoryandConsentForm", "BeforeAfterCare"]
   return (
     <nav>
       <Image src={logo} alt="logo" width={500} height={500}/>
@@ -40,7 +40,7 @@ const NavBar =() => {
                 <option key={index} value={option}>Client History and Consent Form</option> 
               </Link>
             )
-          } else if(option === "Before/AfterCare") {
+          } else if(option === "BeforeAfterCare") {
             return (
               <Link 
               className="navLinks"

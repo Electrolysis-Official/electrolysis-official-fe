@@ -3,7 +3,7 @@ const Services = () => {
     <main>
       <h1>Services</h1>
 
-<p className="services-paragraph1">Here at T4T Electrolysis, we treat everyone but specialize in the needs of the trans/queer community - which primarily means working on facial hair, genital hair, surgery prep, and custom work to help affirm your gender in a way that’s unique to you. <br />
+<p className="servicesParagraph1">Here at T4T Electrolysis, we treat everyone but specialize in the needs of the trans/queer community - which primarily means working on facial hair, genital hair, surgery prep, and custom work to help affirm your gender in a way that’s unique to you. <br />
 
 We treat between 15 minutes and 2 hour long sessions <br />
 
