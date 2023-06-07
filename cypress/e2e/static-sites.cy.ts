@@ -15,4 +15,8 @@ describe("Navigation to Static Pages", () => {
     cy.get("main").get("h1").should("contain", "Services")
     cy.go("back")
   })
+
+  it("Should show AboutMe content", () => {
+    cy.contains("AboutMe")
+  })
 })
