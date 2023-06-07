@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import  Link  from 'next/link'
+import Link  from 'next/link'
 import logo from "./assets/logo.jpeg"
 import Image from "next/image"
 
