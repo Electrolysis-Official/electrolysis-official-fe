@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import NavBar from './NavBar'
+// import Electrolysis from './Electrolysis/page'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         </body>
+        {/* <Electrolysis /> */}
     </html>
   )
 }

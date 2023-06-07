@@ -1,10 +1,10 @@
 import "./NavBar.css"
-import  Link  from 'next/link'
+import Link  from 'next/link'
 import logo from "./assets/logo.jpeg"
 import Image from "next/image"
 
 const NavBar =() => {
-  const options = ["Home", "Electrolysis", "Services", "About Me", "Client History and Consent Form", "Before/After Care"]
+  const options = ["Home", "Electrolysis", "Services", "AboutMe", "ClientHistoryandConsentForm", "BeforeAfterCare"]
   return (
     <nav>
       <Image src={logo} alt="logo" width={500} height={500}/>
@@ -18,6 +18,36 @@ const NavBar =() => {
               key={index}
               >
                 <option key={index} value={option}>{option}</option> 
+              </Link>
+            )
+          } else if(option === "AboutMe") {
+            return (
+              <Link 
+              className="navLinks"
+              href={`/${option}`}
+              key={index}
+              >
+                <option key={index} value={option}>About Me</option> 
+              </Link>
+            )
+          } else if(option === "ClientHistoryandConsentForm") {
+            return (
+              <Link 
+              className="navLinks"
+              href={`/${option}`}
+              key={index}
+              >
+                <option key={index} value={option}>Client History and Consent Form</option> 
+              </Link>
+            )
+          } else if(option === "BeforeAfterCare") {
+            return (
+              <Link 
+              className="navLinks"
+              href={`/${option}`}
+              key={index}
+              >
+                <option key={index} value={option}>Before/After Care</option> 
               </Link>
             )
           } else {
