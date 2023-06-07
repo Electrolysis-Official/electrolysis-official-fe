@@ -9,4 +9,10 @@ describe("Navigation to Static Pages", () => {
     .get("h1").should("contain", "Electrolysis")
     cy.go("back")
   })
+  it("Should show Services content", () => {
+    cy.contains("Services").click()
+    cy.location("pathname").should("eq", "/Services")
+    cy.get("main").get("h1").should("contain", "Services")
+    cy.go("back")
+  })
 })

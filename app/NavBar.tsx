@@ -4,7 +4,7 @@ import logo from "./assets/logo.jpeg"
 import Image from "next/image"
 
 const NavBar =() => {
-  const options = ["Home", "Electrolysis", "Services", "About Me", "Client History and Consent Form", "Before/After Care"]
+  const options = ["Home", "Electrolysis", "Services", "AboutMe", "Client History and Consent Form", "Before/After Care"]
   return (
     <nav>
       <Image src={logo} alt="logo" width={500} height={500}/>
