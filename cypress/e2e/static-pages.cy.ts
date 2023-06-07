@@ -22,4 +22,11 @@ describe("Navigation to Static Pages", () => {
     cy.get("main").get("h1").should("contain", "About Me")
     cy.go("back")
   })
+
+  it("Should show Before/After Care content", () => {
+    cy.contains("Before/After Care").click()
+    cy.location("pathname").should("eq", "/BeforeAfterCare")
+    cy.get("main").get("h1").should("contain", "Care Before/After")
+    cy.go("back")
+  })
 })
