@@ -4,8 +4,9 @@
   align-items: center;
 }
 
-.mainContent > p {
+.mainParagraph {
   width:75%;
+  color:aqua;
 }
 
 /* .main {

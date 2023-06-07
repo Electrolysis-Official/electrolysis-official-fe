@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+}
+
+datalist {
+  width:100%;
+  height: 100px;
+}
+
+.navBarOptions {
+  display: flex;
+}
+
+.navLinks {
+  width:50%;
+  height:100px;
+  
+}
+option {
+  width:50%;
+  height:100px;
+}
+
+a {
+  width:50%;
+  height:100px;
+}
+
+img {
+  width: 10%;
+  height:12vh
+}
